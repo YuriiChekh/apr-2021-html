@@ -1,0 +1,68 @@
+
+body, h3 {
+    margin: 0;
+}
+
+.wrap {
+    background: silver;
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.simpson-item {
+    background: cornflowerblue;
+    height: 380px;
+    width: 400px;
+
+
+}
+
+.simpson-item img {
+    width: 200px;
+    height: 298px;
+}
+
+
+.simpson-item h3 {
+    margin: 20px 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.simpson-item p {
+    padding: 20px;
+    text-align: justify;
+}
+
+.simpson-item .flex-box {
+    display: flex;
+}
+
+
+/*.mirror-text > .flex-box > img {*/
+/*    order: 2;*/
+
+/*}*/
+
+/*.mirror-text .flex-box p {*/
+/*    order: 1;*/
+
+
+/*}*/
+
+.simpson-item:nth-child(2n) img {
+    order: 2;
+}
+
+.simpson-item:nth-child(2n) p {
+    order: 1;
+}
+
+
+
+
+
+
+
