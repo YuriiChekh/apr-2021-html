@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            .menu {
+                display: flex;
+                padding: 0;
+            }
+
+            .menu > li {
+                width: fit-content;
+                list-style: none;
+                margin-right: 10px;
+                background: tomato;
+                height: 20px;
+                overflow: hidden;
+
+            }
+
+            .submenu {
+                /*position: absolute;*/
+                padding: 0;
+                /*left: -9999px;*/
+                /*transition: 0.3s;*/
+                background: silver;
+            }
+
+            .submenu > li {
+                list-style: none;
+            }
+
+
+            .menu  li:hover {
+                transition: 1s;
+                height: fit-content;
+            }
+        </style>
+    </head>
+    <body>
+
+        <ul class="menu">
+            <li>menu item</li>
+            <li>menu item</li>
+            <li>menu item
+                <ul class="submenu">
+                    <li>submenu</li>
+                    <li>submenu</li>
+                    <li>submenu</li>
+                </ul>
+
+            </li>
+            <li>menu item</li>
+        </ul>
+
+    </body>
+</html>
